@@ -17,7 +17,7 @@
 import type { PriceTable } from "./pricing.js";
 
 export const GENERATED_PRICES: PriceTable = {
-  asOf: "2026-07-28",
+  asOf: "2026-09-21",
   source: "litellm@main + pricing.overrides.json",
   batchMult: 0.5,
   serverTools: { webSearchPerRequest: 0.01, webFetchPerRequest: 0 },
@@ -34,10 +34,13 @@ export const GENERATED_PRICES: PriceTable = {
     { match: "claude-4-opus-20250514", inputPerMTok: 15, outputPerMTok: 75, cacheReadMult: 0.1, cacheWrite5mMult: 1.25, cacheWrite1hMult: 2 },
     { match: "claude-4-sonnet-20250514", inputPerMTok: 3, outputPerMTok: 15, cacheReadMult: 0.1, cacheWrite5mMult: 1.25, cacheWrite1hMult: 2 },
     { match: "claude-fable-5", inputPerMTok: 10, outputPerMTok: 50, cacheReadMult: 0.1, cacheWrite5mMult: 1.25, cacheWrite1hMult: 2 },
+    { match: "claude-fable-5-1", inputPerMTok: 10, outputPerMTok: 50, cacheReadMult: 0.1, cacheWrite5mMult: 1.25, cacheWrite1hMult: 2 },
     { match: "claude-haiku-3", inputPerMTok: 0.25, outputPerMTok: 1.25, cacheReadMult: 0.1, cacheWrite5mMult: 1.25, cacheWrite1hMult: 2, note: "retired model, rate frozen" },
     { match: "claude-haiku-4-5", inputPerMTok: 1, outputPerMTok: 5, cacheReadMult: 0.1, cacheWrite5mMult: 1.25, cacheWrite1hMult: 2 },
     { match: "claude-haiku-4-5-20251001", inputPerMTok: 1, outputPerMTok: 5, cacheReadMult: 0.1, cacheWrite5mMult: 1.25, cacheWrite1hMult: 2 },
     { match: "claude-mythos-5", inputPerMTok: 10, outputPerMTok: 50, cacheReadMult: 0.1, cacheWrite5mMult: 1.25, cacheWrite1hMult: 2, note: "Project Glasswing; absent from the public feed" },
+    { match: "claude-mythos-5-1", inputPerMTok: 10, outputPerMTok: 50, cacheReadMult: 0.1, cacheWrite5mMult: 1.25, cacheWrite1hMult: 2 },
+    { match: "claude-mythos-preview", inputPerMTok: 10, outputPerMTok: 50, cacheReadMult: 0.1, cacheWrite5mMult: 1.25, cacheWrite1hMult: 2 },
     { match: "claude-opus-4-0", inputPerMTok: 15, outputPerMTok: 75, cacheReadMult: 0.1, cacheWrite5mMult: 1.25, cacheWrite1hMult: 2, note: "pre-4.5 Opus tier" },
     { match: "claude-opus-4-1", inputPerMTok: 15, outputPerMTok: 75, cacheReadMult: 0.1, cacheWrite5mMult: 1.25, cacheWrite1hMult: 2, note: "pre-4.5 Opus tier" },
     { match: "claude-opus-4-1-20250805", inputPerMTok: 15, outputPerMTok: 75, cacheReadMult: 0.1, cacheWrite5mMult: 1.25, cacheWrite1hMult: 2 },
